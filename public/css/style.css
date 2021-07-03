@@ -290,9 +290,6 @@ body{
 
 }
 
-.total-card-details{
-}
-
 .total-card-details p{
     font-weight:bold;
     margin-bottom:0;
@@ -664,10 +661,6 @@ body{
 .single-user-button{
     width:22%;
     margin-left:40px;
-}
-
-.single-user-modifier a{
-
 }
 
 .single-user-modifier{

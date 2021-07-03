@@ -30,7 +30,7 @@ class Register extends React.Component {
             {existAlert}
             {passwordAlert}
             <form method="POST" action="/blitt/register">
-                <input name="image" value="https://www.startupdelta.org/wp-content/uploads/2018/04/No-profile-LinkedIn.jpg" id="hidden-profile-details" hidden/>
+                <input name="image" value="https://writedirection.com/website/wp-content/uploads/2016/09/blank-profile-picture-973460_960_720.png" id="hidden-profile-details" hidden/>
                 <div class="form-group">
                     <label for="testInput1">User Name</label>
                     <input type="test" class="form-control" id="testInput1" placeholder="Enter Username" name="name" required/>

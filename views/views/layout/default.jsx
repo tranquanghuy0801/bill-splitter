@@ -4,6 +4,7 @@ class Default extends React.Component {
   render() {
     let loginOrLogout = this.props.cookieAvailable?"Log Out":"Login";
     let url = this.props.cookieAvailable? "/blitt/logout":"/blitt/login";
+    console.log(this.props);
 
     return (
       <html>

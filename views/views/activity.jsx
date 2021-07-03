@@ -138,6 +138,9 @@ class Activity extends React.Component {
               <li class="nav-item">
                 <a class="nav-link active" id="activity-tab"  href="/blitt/activityList" role="tab" >Activity</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" id="details-tab"  href="/blitt/user_profile" role="tab" >Edit Details</a>
+              </li>
             </ul>
             <div class="tab-content" id="myTabContent">
 

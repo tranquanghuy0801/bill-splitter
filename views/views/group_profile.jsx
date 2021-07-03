@@ -6,6 +6,24 @@ class Group_Profile extends React.Component {
     let url = "/blitt/groupList/"+this.props.group_id+"/groupProfilePost"
     return (
       <Default title={this.props.title} cookieAvailable={this.props.cookieAvailable} user_name={this.props.user_name}>
+
+            {/* <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+              <li class="nav-item ">
+                  <a class="nav-link active" id="home-tab"  href="/blitt" role="tab" >Personal</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" id="profile-tab"  href="/blitt/groupList" role="tab" >Group</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="contact-tab"  href="/blitt/friendList" role="tab" >Friends</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="activity-tab"  href="/blitt/activityList" role="tab" >Activity</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" id="details-tab"  href="/blitt/user_profile" role="tab" >Edit Details</a>
+              </li>
+            </ul> */}
             <h2 style={{textAlign:"center"}}>{this.props.result[0].name}</h2>
             <img className="profile-page-img"src={this.props.result[0].image}/>
 

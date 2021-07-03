@@ -2,8 +2,9 @@ var React = require("react");
 
 class GroupHead extends React.Component {
   render() {
-
-    let text = parseFloat(this.props.user_total).toFixed(2) > 0? <p className="group-head-amount">You get back S${this.props.user_total}</p> : (parseFloat(this.props.user_total).toFixed(2) === 0?<p className="group-head-amount">No owings</p>: <p className="group-head-amount">You owe S${parseFloat(this.props.user_total*-1).toFixed(2)}</p>)
+    let text = parseFloat(this.props.user_total).toFixed(2) > 0 
+                ? <p className="group-head-amount">You get back S${this.props.user_total}</p> 
+                : (parseFloat(this.props.user_total).toFixed(2) === "0.00" ? <p className="group-head-amount">No owings</p> : <p className="group-head-amount">You owe nothing${parseFloat(this.props.user_total*-1).toFixed(2)}</p>)
     let url = "/blitt/groupList/"+this.props.group_id+"/newBill"
     let settleUrl = "/blitt/groupList/"+this.props.group_id+"/chooseWhoToSettleInGroup";
     let photoUrl = "/blitt/groupList/"+this.props.group_id+"/group_profile";

@@ -13,7 +13,7 @@ class Friend_List extends React.Component {
 
     return (
       <Default title={this.props.title} cookieAvailable={this.props.cookieAvailable} user_name={this.props.user_name}>
-          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
           <li class="nav-item ">
             <a class="nav-link" id="home-tab"  href="/blitt" role="tab" >Personal</a>
           </li>
@@ -24,14 +24,17 @@ class Friend_List extends React.Component {
             <a class="nav-link active" id="contact-tab"  href="/blitt/friendList" role="tab" >Friends</a>
           </li>
           <li class="nav-item">
-                <a class="nav-link" id="activity-tab"  href="/blitt/activityList" role="tab" >Activity</a>
-              </li>
+            <a class="nav-link" id="activity-tab"  href="/blitt/activityList" role="tab" >Activity</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" id="details-tab"  href="/blitt/user_profile" role="tab" >Edit Details</a>
+          </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-                <div className="card-slot">
-                <TotalCard user_total = {this.props.user_total} user_details={this.props.user_details}/>
-                    {friendList}
-                </div>
+          <div className="card-slot">
+          <TotalCard user_total = {this.props.user_total} user_details={this.props.user_details}/>
+              {friendList}
+          </div>
         </div>
 
 

@@ -71,6 +71,7 @@ module.exports = (db) => {
 			request.body.password = sha256(request.body.password);
 
 			db.user.checkIfUserExist(request.body, (error, result) => {
+				console.log(result);
 				if (result) {
 					if (result.exists) {
 						response.redirect("/blitt/register?exists=true")
