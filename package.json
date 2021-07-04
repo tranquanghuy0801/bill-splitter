@@ -14,6 +14,10 @@
   "dependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^16.0.0",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
     "chart.js": "^2.8.0",
     "cloudinary": "^1.14.0",
     "cookie-parser": "^1.4.4",
@@ -26,9 +30,18 @@
     "pg": "^7.4.3",
     "pg-format": "^1.0.4",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.0.0",
     "nodemon": "^2.0.7"
