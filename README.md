@@ -1,10 +1,9 @@
-# Blitt
+# Bill Splitter
 
 
-![Blitt](https://user-images.githubusercontent.com/50238797/65367315-d7161d80-dc61-11e9-8f2d-9038afbe2a41.PNG)
+![Bill Splitter](Project-Image.png)
 
-Project - Blitt (Bill Splitting Web App)<br/>
-Check out the full app here! https://blitt.herokuapp.com/blitt
+Project - Bill Splitter (Bill Splitting Web App)<br/>
 
 
 ## Objective
@@ -30,9 +29,9 @@ createdb DATABASE_NAME -U USERNAME
 ```
 psql -d DATABASE_NAME -U USERNAME -f postgres/tables.sql
 ````
-4. Seed dummy data
+4. Run the application
 ```
-psql -d DATABASE_NAME -U USERNAME -f postgres/seed.sql
+npm start
 ````
 
 ## Technologies Used
@@ -67,4 +66,4 @@ Users can also check the activitiy log for any recent updates. Users can only se
 So far I am still tracing for bugs in the app as money calculations are very sensitive and bugs are hard to trace. There are also few more functions that I will like to implement later on such as a proper profile page for user to change their personal details, and also a add friend system. Another unsolvable issue would be when the owing is 0, the app supposed to show no owings but it will show "You owe 0.00" instead, this is some issue when doing calculation using parseFloat and toFixed. Will continue to see how to solve this.
 
 ## Disclaimer
-This project is a school project for web developing practice and skills showcase purpose only, and some parts may look similar to existing bill splitting app. 
+This project is a school project for web developing practice and skills showcase purpose only, and some parts may look similar to existing bill splitting app.
